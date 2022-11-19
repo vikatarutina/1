@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Моя домашняя страница</title>
+</head>
+<style>
+body {background-color: #8FBC8F;}
+</style>
+<body>
+<p align="center"> <td><font color="red"> Приветствую на моей домашней странице</p></font></td><br>
+<p align="center"><em> Тарутина Виктория </p></em><br>
+<b> Мне нравится помогать людям, свободное время провожу за просмотром сериалов. Мечтаю научиться петь</b><br> 
+<p><img src="https://otkritkis.com/wp-content/uploads/2022/07/gwuzv.gif" width="170" height="150" </p><br>
+ <script>
+   function digitalClock() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+      if (hours < 10) hours = "0" + hours;
+      if (minutes < 10) minutes = "0" + minutes;
+      if (seconds < 10) seconds = "0" + seconds;
+        document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+        setTimeout("digitalClock()", 1000);
+   }
+  </script>
+  <div id="id_clock"></div>
+    <script>digitalClock();</script>
+</body>
+</html>
